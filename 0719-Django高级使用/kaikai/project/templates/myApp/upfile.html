@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件</title>
+    <link href="https://cdn.bootcss.com/bootstra/p/4.1.1/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <!--上传文件必须是post请求-->
+    <form method="post" action="/savefile/" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file"/>
+        <input type="submit" value="上传">
+    </form>
+</body>
+</html>
