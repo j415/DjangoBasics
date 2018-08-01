@@ -7,17 +7,17 @@ r"""
 re.match函数
 原型：match(pattern, string, flags=0)
 参数：
-pattern：匹配的正则表达式
-string：要匹配的字符串
-flags：标志位，用于控制正则表达式的匹配方式，值如下
-re.I        忽略大小写
-re.L        做本地化识别
-re.M        多行匹配,影响^和$
-re.S        是.匹配包括换行符在内的所有字符
-re.U        根据Unicode字符集解析字符，影响\w \W \b \B
-re.X        是我们以更灵活的格式理解正则表达式
+    pattern：匹配的正则表达式
+    string：要匹配的字符串
+    flags：标志位，用于控制正则表达式的匹配方式，值如下
+        re.I        忽略大小写
+        re.L        做本地化识别
+        re.M        多行匹配,影响^和$
+        re.S        是.匹配包括换行符在内的所有字符
+        re.U        根据Unicode字符集解析字符，影响\w \W \b \B
+        re.X        是我们以更灵活的格式理解正则表达式
 
-功能：尝试从一个字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的花，返回None
+功能：尝试从一个字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，返回None
 
 """
 
@@ -73,7 +73,7 @@ print(re.findall('aspiring',"good man is aspiring!!!Aspiring is nice",flags=re.I
 
 
 
-
+re
 
 
 

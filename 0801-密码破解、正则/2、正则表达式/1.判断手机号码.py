@@ -49,14 +49,12 @@ print(checkPhone3("fjfafdjadfjsafdjsafssd13945645645dddddsssaaa14788889999"))
 
 
 
-
-
 """
 
-QQ       6666-1234567890
-mail     1720049083@qq.com
-phone       010-56747894
-user        6到12位
+QQ                  6666-1234567890
+mail                1720049083@qq.com
+phone               010-56747894
+user                6到12位
 passwd
 ip
 url
@@ -74,8 +72,10 @@ print(re_QQ.search('123456700046'))
 
 
 
+re_mail = re.compile(r'^[1-9a-zA-Z][0-9a-zA-Z]+@[0-9a-zA-Z]{0,4}.[0-9a-zA-Z]{1,9}')
 
-
+print(re_mail.search('1720049083@qq.com'))
+print(re_mail.search('aspiring@360.jiang'))
 
 
 
