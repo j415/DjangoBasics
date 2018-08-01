@@ -5,9 +5,9 @@ import os, time, random
 def run(name):
     print("子进程%d启动--%s" % (name, os.getpid()))
     start = time.time()
-    t = random.randint(1,3)
+    t = random.randint(1, 3)
     time.sleep(t)
-    # print(t)
+    print(t)
     end = time.time()
     print("子进程%d结束--%s---耗时%.2f" % (name, os.getpid(), end - start))
     # print("这是{:.2f}个神奇的二维码".format(end - start))
