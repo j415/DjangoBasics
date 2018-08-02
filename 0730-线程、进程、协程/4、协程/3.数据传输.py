@@ -1,7 +1,7 @@
 def run():
     # 空变量,存储的作用,data始终为空
-    data = ""
-    r = yield data
+    data = "<->"
+    r = yield "00"
     # r = a
     print(1, r, data)
     r = yield "aa"
