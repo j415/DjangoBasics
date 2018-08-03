@@ -1,5 +1,8 @@
 import re
 
+
+# r表示原生字符，也就是说不转义字符，不需要再次被转义
+
 print('--------------匹配单个字符与数字---------------------')
 
 r"""
@@ -120,5 +123,23 @@ print('------------------特殊---------------------')
 
 
 print(re.findall(r"//*.*?/*/", r"/*   part1   */     /*     part2      */"))
+
+
+
+
+
+
+print('------------------勿扰---------------------')
+
+
+
+str = '<p>aspiring:to forge ahead</p>'
+
+print(re.findall(r'<p>.*</p>', str))
+# 括号表示将匹配到的字符串 括号里面的内容取出来
+print(re.findall(r'<p>(.*)</p>', str))
+
+print(re.search(r'(aspiring)', str))
+
 
 

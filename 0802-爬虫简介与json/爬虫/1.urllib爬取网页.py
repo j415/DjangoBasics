@@ -1,13 +1,13 @@
 import urllib.request
 
-url = "http://www.baidu.com"
+url = "https://www.baidu.com"
 
 
 #向指定的url地址发起请求，并返回服务器响应的数据(文件的对象)
 response = urllib.request.urlopen(url)
 
 # 读取文件的全部内容，会把读取到的数据赋值给一个字符串变量
-data = response.read()
+data = response.read().decode('utf-8')
 print(data)
 print(type(data))
 
@@ -34,22 +34,22 @@ print(type(data[100].decode('utf-8')))
 
 # response 属性
 
-
-#返回当前环境的有关信息
-print(response.info())
-
-# 返回状态码
-print(response.getcode())
-if response.getcode() == 200 or response.getcode() == 304:
-    # 处理网页信息-*
-    pass
-
-# 返回当前正在爬取的url地址
-print(response.geturl())
-
 #
-
-
+# #返回当前环境的有关信息
+# print(response.info())
+#
+# # 返回状态码
+# print(response.getcode())
+# if response.getcode() == 200 or response.getcode() == 304:
+#     # 处理网页信息-*
+#     pass
+#
+# # 返回当前正在爬取的url地址
+# print(response.geturl())
+#
+# #
+#
+#
 
 
 

@@ -30,7 +30,7 @@ d = re.finditer(r'(aspiring)',str3)
 while True:
     try:
         l = next(d)
-        print(l)
+        print('-----',l)
         print(d)
     except StopIteration as e:
         break
@@ -40,13 +40,15 @@ while True:
 
 """
 aspiring is a good good good man
+
 字符串的替换和修改
-sub(pattern, repl, string, count=0)
-subn(pattern, repl, string, count=0, flags=0)
-pattern:    正则表达式(规则)
-repl:       指定的用来替换的字符串
-string:     目标字符串
-count:      最多替换次数
+原型：sub(pattern, repl, string, count=0)
+原型：subn(pattern, repl, string, count=0, flags=0)
+参数：
+    pattern:    正则表达式(规则)
+    repl:       指定的用来替换的字符串
+    string:     目标字符串
+    count:      最多替换次数
 功能： 在目标字符串中以正则表达式的规则匹配字符串，再把她们替换成指定的字符串。可以指定替换的次数，如果不指定，替换所有的匹配字符串
 
 
@@ -105,7 +107,7 @@ pattern:要编译的正则表达式
 pat = r'^1(([3578]\d)|(47))\d{8}$'
 print(re.match(pat, "13600000000"))
 
-# 编译成争着对象
+# 编译成正则对象
 re_telephone = re.compile(pat)
 print(re_telephone.match("13600000000"))
 

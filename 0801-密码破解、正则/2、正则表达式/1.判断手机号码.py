@@ -61,6 +61,7 @@ url
 
 
 """
+print("-------------QQ--------------")
 
 re_QQ = re.compile(r'^[1-9]\d{5,9}$')
 
@@ -70,16 +71,24 @@ print(re_QQ.search('0123458746'))
 
 print(re_QQ.search('123456700046'))
 
+print("-------------mail--------------")
 
-
-re_mail = re.compile(r'^[1-9a-zA-Z][0-9a-zA-Z]+@[0-9a-zA-Z]{0,4}.[0-9a-zA-Z]{1,9}')
+re_mail = re.compile(r'^\w\w*@[0-9a-zA-Z]{0,4}.[0-9a-zA-Z]{1,9}')
 
 print(re_mail.search('1720049083@qq.com'))
+print(re_mail.search('1@qq.com'))
 print(re_mail.search('aspiring@360.jiang'))
 
+print("-------------url--------------")
 
 
+pat = r'^(http|https)://www.[0-9a-zA-Z]+.com/$'
+
+re_url = re.compile(pat)
 
 
-
-
+print(re_url.search('https://www.baidu.com/'))
+print(re_url.search('http://www.123sogou.com/'))
+print(re_url.search('http://www.baidu_.com/'))
+print(re_url.search('http://www.baidu.com/22'))
+print(re_url.search('333http://www.baidu.com/'))
