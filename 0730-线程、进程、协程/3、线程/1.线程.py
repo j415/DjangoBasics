@@ -10,6 +10,6 @@
 
 模块
 1._thread模块      低级模块
-2.threading模块    高级模块 ，对——thread进行了封装
+2.threading模块    高级模块 ，对_thread进行了封装
 
 """

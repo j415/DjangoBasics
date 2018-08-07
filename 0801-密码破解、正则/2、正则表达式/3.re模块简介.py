@@ -73,7 +73,6 @@ print(re.findall('aspiring',"good man is aspiring!!!Aspiring is nice",flags=re.I
 
 
 
-re
 
 
 

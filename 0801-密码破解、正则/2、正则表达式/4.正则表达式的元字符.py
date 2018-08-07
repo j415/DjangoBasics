@@ -24,6 +24,8 @@ r"""
 \s              匹配任意的空白符(空格，换行，回车，换页，制表)，效果等同[ \f\n\r\t]
 \S              匹配任意的非空白符(空格，换行，回车，换页，制表)，效果等同[^ \f\n\r\t]
 
+\w+\W+
+
 """
 
 
@@ -34,7 +36,7 @@ print(re.findall('.', 'aspiring is a good man \n 1 2 3',flags=re.S))
 print('---')
 
 print(re.findall('[^</p>]',"<p>test</p>"))
-
+print(re.findall('<p>(.*?)</p>',"<p>test</p>"))
 
 print("---------------锚字符(边界字符)---------------------")
 

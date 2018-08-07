@@ -2,7 +2,7 @@ import socket
 import threading
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind(('192.168.0.105', 8081))
+server.bind(('192.168.0.105', 8000))
 server.listen(5)
 
 

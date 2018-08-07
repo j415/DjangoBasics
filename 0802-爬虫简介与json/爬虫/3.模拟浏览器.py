@@ -1,4 +1,4 @@
-import urllib.request
+ 年import urllib.request
 import random
 
 url = "http://www.baidu.com"

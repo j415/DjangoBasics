@@ -10,7 +10,7 @@
 """
 import urllib.request
 
-url = "http://127.0.0.1:8000/"
+url = "http://119.23.23.50:8000/"
 
 response = urllib.request.urlopen(url)
 data = response.read().decode('utf-8')
