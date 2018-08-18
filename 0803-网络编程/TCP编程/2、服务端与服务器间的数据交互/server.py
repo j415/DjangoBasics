@@ -4,7 +4,7 @@ import socket
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # 绑定IP端口
-server.bind(('192.168.0.105', 8080))
+server.bind(('192.168.174.1', 8001))
 
 # 监听
 server.listen(5)

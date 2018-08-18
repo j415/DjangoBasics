@@ -27,7 +27,7 @@ print(type(data[100].decode('utf-8')))
 """
 
 
-# 将爬取道德网页写入文件
+# 将爬取到的网页写入文件
 # with open(r'E:\all-workspace\qianfeng\0802-爬虫简介与json\file\file1.html','wb') as f:
 #     f.write(data)
 

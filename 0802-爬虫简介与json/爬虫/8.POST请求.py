@@ -15,7 +15,7 @@ import  urllib.parse
 
 
 
-url = "http://127.0.0.1:8000/user/login/?from=/blog/"
+url = "http://119.23.23.50:8000/user/login/?from=/blog/"
 
 # 将要发送的数据合成一个字典
 # 字典的键去网址里找，一般为input标签的name属性的值

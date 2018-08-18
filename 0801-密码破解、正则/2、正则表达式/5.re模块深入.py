@@ -60,7 +60,7 @@ str5 = "aspiring is a good good good man"
 
 print(re.sub(r'(good)', 'nice', str5, count=2))
 print(type(re.sub(r'(good)', 'nice', str5)))
-print(re.subn(r'(good)', 'nice', str5, count=2))
+print(re.subn(r'(good)', 'nice', str5, count=1))
 print(type(re.subn(r'(good)', 'nice', str5, count=2)))
 
 

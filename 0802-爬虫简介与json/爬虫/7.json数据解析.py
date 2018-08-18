@@ -48,7 +48,7 @@ with open(path1,'rb') as f:
 
 path2 = r'E:\all-workspace\qianfeng\0802-爬虫简介与json\Json\test.json'
 
-jsonSData3 = {"name":"aspiring", "age": 17, "hobby": ["money","power", "read"],"parames":{"a":1,"b":2}}
+jsonSData3 = {"name":"aspiring", "age": 17, "hobby": ["money","power", "read"],"params":{"a":1,"b":2}}
 
 
 
