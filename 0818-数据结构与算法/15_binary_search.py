@@ -37,7 +37,6 @@ def binary_search_2(alist, item):
 
 
 
-git 
 
 
 if __name__ == "__main__":
